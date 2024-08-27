@@ -211,7 +211,7 @@
             // 
             this.lbErPo.AutoSize = true;
             this.lbErPo.BackColor = System.Drawing.SystemColors.Control;
-            this.lbErPo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbErPo.ForeColor = System.Drawing.Color.Red;
             this.lbErPo.Location = new System.Drawing.Point(92, 1);
             this.lbErPo.Name = "lbErPo";
             this.lbErPo.Size = new System.Drawing.Size(0, 13);
@@ -221,6 +221,7 @@
             // 
             this.lbErNa.AutoSize = true;
             this.lbErNa.BackColor = System.Drawing.SystemColors.Control;
+            this.lbErNa.ForeColor = System.Drawing.Color.Red;
             this.lbErNa.Location = new System.Drawing.Point(92, 46);
             this.lbErNa.Name = "lbErNa";
             this.lbErNa.Size = new System.Drawing.Size(0, 13);
@@ -229,6 +230,7 @@
             // lbErCa
             // 
             this.lbErCa.AutoSize = true;
+            this.lbErCa.ForeColor = System.Drawing.Color.Red;
             this.lbErCa.Location = new System.Drawing.Point(348, 0);
             this.lbErCa.Name = "lbErCa";
             this.lbErCa.Size = new System.Drawing.Size(0, 13);
@@ -237,6 +239,7 @@
             // lbErPri
             // 
             this.lbErPri.AutoSize = true;
+            this.lbErPri.ForeColor = System.Drawing.Color.Red;
             this.lbErPri.Location = new System.Drawing.Point(348, 46);
             this.lbErPri.Name = "lbErPri";
             this.lbErPri.Size = new System.Drawing.Size(0, 13);
@@ -246,7 +249,7 @@
             // 
             this.lbErPo1.AutoSize = true;
             this.lbErPo1.BackColor = System.Drawing.SystemColors.Control;
-            this.lbErPo1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbErPo1.ForeColor = System.Drawing.Color.Red;
             this.lbErPo1.Location = new System.Drawing.Point(92, 1);
             this.lbErPo1.Name = "lbErPo1";
             this.lbErPo1.Size = new System.Drawing.Size(0, 13);
@@ -265,6 +268,7 @@
             // lbErQuan
             // 
             this.lbErQuan.AutoSize = true;
+            this.lbErQuan.ForeColor = System.Drawing.Color.Red;
             this.lbErQuan.Location = new System.Drawing.Point(192, 88);
             this.lbErQuan.Name = "lbErQuan";
             this.lbErQuan.Size = new System.Drawing.Size(0, 13);

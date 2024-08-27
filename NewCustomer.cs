@@ -247,6 +247,7 @@ namespace BAN_HANG_DA_CAP
             cmd.Parameters.AddWithValue("@p", phonenumber.Text);
             try
             {
+                var a = 0;
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Success", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Dispose();

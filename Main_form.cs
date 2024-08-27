@@ -71,5 +71,10 @@ namespace BAN_HANG_DA_CAP
             personal_Information.ShowDialog();
             this.Dispose();
         }
+
+        private void Main_form_Load(object sender, EventArgs e)
+        {
+
         }
+    }
     }

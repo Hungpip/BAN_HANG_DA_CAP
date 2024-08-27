@@ -28,16 +28,36 @@ namespace BAN_HANG_DA_CAP
             main.Show();
             this.Dispose();
         }
-
         private void filltable()
         {
-            string query = "with temp5 as (select c.id as id, pi.quantity * p.price as total from personal_information pi join product p on p.product_id = pi.p_id  join customer c on c.id = pi.c_id ) select id, sum(total) as spent from temp5 group by (id) order by spent desc;";
+            string query = 
+                "with temp as (" +
+                "select " +
+                "c.id as id, " +
+                "pi.quantity * p.price as total " +
+                "from personal_information pi " +
+                "join product p on p.product_id = pi.p_id " +
+                "join customer c on c.id = pi.c_id) " +
+                "select id, sum(total) as spent " +
+                "from temp " +
+                "group by (id) " +
+                "order by spent desc;";
             DataTable tbl = new DataTable();
             SqlDataAdapter ad = new SqlDataAdapter(query, connection);
             ad.Fill(tbl);
             dataGridView1.DataSource = tbl;
 
-            string query1 = "with temp as (select top(500) pi.p_id, sum(pi.quantity) as quantity from product p join personal_information pi on pi.p_id = p.product_id group by (pi.p_id) order by sum(pi.quantity) desc ) select t.quantity as quantity, p.product_name as name from temp t join product p on p.product_id = t.p_id;";
+            string query1 = 
+                "with temp as (" +
+                "select top(500) " +
+                "pi.p_id, sum(pi.quantity) as quantity " +
+                "from product p " +
+                "join personal_information pi on pi.p_id = p.product_id " +
+                "group by (pi.p_id) order by sum(pi.quantity) desc) " +
+                "select t.quantity as quantity, " +
+                "p.product_name as name " +
+                "from temp t " +
+                "join product p on p.product_id = t.p_id;";
             DataTable tbl1 = new DataTable();
             SqlDataAdapter ad1 = new SqlDataAdapter(query1, connection);
             ad1.Fill(tbl1);

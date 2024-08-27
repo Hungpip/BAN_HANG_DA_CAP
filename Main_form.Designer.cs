@@ -162,6 +162,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main_form";
             this.Text = "Main_form";
+            this.Load += new System.EventHandler(this.Main_form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
